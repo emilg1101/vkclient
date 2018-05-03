@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">VKFeed</string>
+    <integer name="com_vk_sdk_AppId">6462220</integer>
+    <string name="title_activity_post">PostActivity</string>
+    <string name="post">Post</string>
+    <string name="str_logout">Logout</string>
+    <string name="str_news">News</string>
+    <string name="str_waiting">Waiting for network ...</string>
+</resources>

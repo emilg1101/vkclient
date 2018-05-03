@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <include layout="@layout/post_header"/>
+
+        <TextView
+            android:id="@+id/postTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/attachmentsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/postTextView">
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/attachmentsRecyclerView"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/likeImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/like_outline"/>
+
+            <TextView
+                android:id="@+id/likeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
